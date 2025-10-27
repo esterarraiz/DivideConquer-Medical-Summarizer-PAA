@@ -25,7 +25,7 @@ O frontend permite ao usuário inserir uma pergunta/descrição textual e fazer 
     * Requer arquivos de pesos (`.pth`) treinados (gerados por `train.py` ou `extract_weights.py`).
 3.  **Modelo Gemini (API):**
     * Acessado via biblioteca `google-generativeai`.
-    * Utiliza um modelo multimodal pré-treinado do Google (e.g., `gemini-1.5-flash-latest`).
+    * Utiliza um modelo multimodal pré-treinado do Google (e.g., `gemini-2.5-flash`).
     * Requer uma chave de API válida configurada.
 
 ## Tecnologias Utilizadas 🚀
@@ -64,7 +64,7 @@ O frontend permite ao usuário inserir uma pergunta/descrição textual e fazer 
 
 4.  **Obter Pesos do Modelo MDCRAPN (.pth):**
     * **Opção A (A partir do Checkpoint):**
-        * Coloque o arquivo `checkpoint_epoch_90.pth` (ou o checkpoint final do seu treino) nesta pasta.
+        * Coloque o arquivo `checkpoint_epoch_X.pth` (ou o checkpoint final do seu treino) nesta pasta.
         * Execute o script para extrair os pesos individuais:
             ```bash
             python extract_weights.py
